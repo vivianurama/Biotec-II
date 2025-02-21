@@ -1,0 +1,157 @@
+Welcome to Ubuntu 24.04.1 LTS (GNU/Linux 5.15.167.4-microsoft-standard-WSL2 x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/pro
+
+ System information as of Thu Feb 20 17:34:02 EST 2025
+
+  System load:  0.0                 Processes:             47
+  Usage of /:   6.7% of 1006.85GB   Users logged in:       0
+  Memory usage: 5%                  IPv4 address for eth0: 172.20.46.86
+  Swap usage:   0%
+
+ * Strictly confined Kubernetes makes edge and IoT secure. Learn how MicroK8s
+   just raised the bar for easy, resilient and secure K8s cluster deployment.
+
+   https://ubuntu.com/engage/secure-kubernetes-at-the-edge
+
+This message is shown once a day. To disable it please create the
+/root/.hushlogin file.
+(base) root@H225-LT3520-01:~# .nano test.sh
+Command '.nano' not found, did you mean:
+  command 'nano' from snap nano (7.2+pkg-4057)
+  command 'rnano' from deb nano (7.2-2ubuntu0.1)
+  command 'nano' from deb nano (7.2-2ubuntu0.1)
+See 'snap info <snapname>' for additional versions.
+(base) root@H225-LT3520-01:~# ls
+ 1998                                            RNAstar.sh           assignment          cummin              miniconda         vivianurama
+ Drosophila_Pepper                               SRR20313491          biotechnique        drospepper          miniconda3       '~p'
+ Log.out                                         SRR20313492          chikwado.txt        fastq_download.py   practice_folder
+ Oryza_sativa.IRGSP-1.0.dna.chromosome.1.fa.gz  'SRX16346774[accn]'   clean               ht-seqrunDros.sh    vivian
+ PRJNA860149                                    'SRX24423349[accn]'   cucuminassignment   index.html          vivian.txt
+(base) root@H225-LT3520-01:~# nano test.sh
+(base) root@H225-LT3520-01:~# nana test.bash
+Command 'nana' not found, did you mean:
+  command 'nano' from snap nano (7.2+pkg-4057)
+  command 'nona' from deb hugin-tools (2023.0.0+dfsg-1)
+  command 'nano' from deb nano (7.2-2ubuntu0.1)
+  command 'nama' from deb nama (1.216-2)
+  command 'nala' from deb nala (0.14.0)
+See 'snap info <snapname>' for additional versions.
+(base) root@H225-LT3520-01:~# nano test.bash
+(base) root@H225-LT3520-01:~# ls
+ 1998                                            RNAstar.sh           assignment          cummin              miniconda         vivian.txt
+ Drosophila_Pepper                               SRR20313491          biotechnique        drospepper          miniconda3        vivianurama
+ Log.out                                         SRR20313492          chikwado.txt        fastq_download.py   practice_folder  '~p'
+ Oryza_sativa.IRGSP-1.0.dna.chromosome.1.fa.gz  'SRX16346774[accn]'   clean               ht-seqrunDros.sh    test.bash
+ PRJNA860149                                    'SRX24423349[accn]'   cucuminassignment   index.html          vivian
+(base) root@H225-LT3520-01:~# nano test.sh
+(base) root@H225-LT3520-01:~# bash test.sh
+bash: test.sh: No such file or directory
+(base) root@H225-LT3520-01:~# bash test.bash
+Hello, world
+(base) root@H225-LT3520-01:~# nano vivian.bash
+(base) root@H225-LT3520-01:~# pwd
+/root
+(base) root@H225-LT3520-01:~# cd vivian
+(base) root@H225-LT3520-01:~/vivian# ls
+(base) root@H225-LT3520-01:~/vivian# cd home/vivian
+-bash: cd: home/vivian: No such file or directory
+(base) root@H225-LT3520-01:~/vivian# cd /home
+(base) root@H225-LT3520-01:/home# cd vivian
+-bash: cd: vivian: No such file or directory
+(base) root@H225-LT3520-01:/home# ls
+DrosPepper
+(base) root@H225-LT3520-01:/home# cd ../
+(base) root@H225-LT3520-01:/# ls
+CPR1_SRR20313496Aligned.sortedByCoord.out_counts.txt  bin                init               mnt   sbin.usr-is-merged  var
+CPR2_SRR20313495Aligned.sortedByCoord.out_counts.txt  bin.usr-is-merged  lib                opt   snap                vivian.txt
+CPR3_SRR20313494Aligned.sortedByCoord.out_counts.txt  boot               lib.usr-is-merged  proc  srv
+TPR1_SRR20313493Aligned.sortedByCoord.out_counts.txt  dev                lib64              root  sys
+TPR2_SRR20313492Aligned.sortedByCoord.out_counts.txt  etc                lost+found         run   tmp
+TPR3_SRR20313491Aligned.sortedByCoord.out_counts.txt  home               media              sbin  usr
+(base) root@H225-LT3520-01:/# cd /home
+(base) root@H225-LT3520-01:/home# mkdir practice
+(base) root@H225-LT3520-01:/home# ls
+DrosPepper  practice
+(base) root@H225-LT3520-01:/home# cd practice/
+(base) root@H225-LT3520-01:/home/practice# nano urama.sh
+(base) root@H225-LT3520-01:/home/practice# bash urama.sh
+urama.sh: line 3: cd: Practice: No such file or directory
+(base) root@H225-LT3520-01:/home/practice# ls
+urama.sh  vivian.txt  vivian_practice
+(base) root@H225-LT3520-01:/home/practice# bash urama.sh
+urama.sh: line 3: cd: Practice: No such file or directory
+mkdir: cannot create directory ‘vivian_practice’: File exists
+(base) root@H225-LT3520-01:/home/practice# ls
+urama.sh  vivian.txt  vivian_practice
+(base) root@H225-LT3520-01:/home/practice# nano urama.sh
+(base) root@H225-LT3520-01:/home/practice# nano urama.sh
+(base) root@H225-LT3520-01:/home/practice# bash urama.sh
+urama.sh: line 3: cd: /home/Practice: No such file or directory
+mkdir: cannot create directory ‘vivian_practice’: File exists
+(base) root@H225-LT3520-01:/home/practice# nano urama.sh
+(base) root@H225-LT3520-01:/home/practice# ls
+urama.sh  vivian.txt  vivian_practice
+(base) root@H225-LT3520-01:/home/practice# cd vivian_practice
+(base) root@H225-LT3520-01:/home/practice/vivian_practice# ls
+(base) root@H225-LT3520-01:/home/practice/vivian_practice# cd practice
+-bash: cd: practice: No such file or directory
+(base) root@H225-LT3520-01:/home/practice/vivian_practice# cd Practice
+-bash: cd: Practice: No such file or directory
+(base) root@H225-LT3520-01:/home/practice/vivian_practice# cd
+(base) root@H225-LT3520-01:~# cd practice
+-bash: cd: practice: No such file or directory
+(base) root@H225-LT3520-01:~# cd home/practice
+-bash: cd: home/practice: No such file or directory
+(base) root@H225-LT3520-01:~# cd practice/
+-bash: cd: practice/: No such file or directory
+(base) root@H225-LT3520-01:~# cd home
+-bash: cd: home: No such file or directory
+(base) root@H225-LT3520-01:~# cd home
+-bash: cd: home: No such file or directory
+(base) root@H225-LT3520-01:~# cd
+(base) root@H225-LT3520-01:~# cd home
+-bash: cd: home: No such file or directory
+(base) root@H225-LT3520-01:~# cd /home
+(base) root@H225-LT3520-01:/home# cd practice
+(base) root@H225-LT3520-01:/home/practice# ls
+urama.sh  vivian.txt  vivian_practice
+(base) root@H225-LT3520-01:/home/practice# cd vivian_practice
+(base) root@H225-LT3520-01:/home/practice/vivian_practice# cd ~
+(base) root@H225-LT3520-01:~# cd home
+-bash: cd: home: No such file or directory
+(base) root@H225-LT3520-01:~# cd /home
+(base) root@H225-LT3520-01:/home# cd practice
+(base) root@H225-LT3520-01:/home/practice# ls
+urama.sh  vivian.txt  vivian_practice
+(base) root@H225-LT3520-01:/home/practice# nano urama.sh
+(base) root@H225-LT3520-01:/home/practice# bash urama.sh
+urama.sh: line 3: cd: /home/Practice: No such file or directory
+mkdir: cannot create directory ‘vivian_practice’: File exists
+(base) root@H225-LT3520-01:/home/practice# nano urama.sh
+(base) root@H225-LT3520-01:/home/practice# bash urama.sh
+urama.sh: line 3: cd: /home/Practice: No such file or directory
+(base) root@H225-LT3520-01:/home/practice# ls
+practice_folder  urama.sh  vivian.txt  vivian_practice
+(base) root@H225-LT3520-01:/home/practice# nano urama.sh
+(base) root@H225-LT3520-01:/home/practice# ls
+practice_folder  urama.sh  vivian.txt  vivian_practice
+(base) root@H225-LT3520-01:/home/practice# cd practice_folder
+(base) root@H225-LT3520-01:/home/practice/practice_folder# ls
+vivian.txt
+(base) root@H225-LT3520-01:/home/practice/practice_folder# nano vivian.txt
+(base) root@H225-LT3520-01:/home/practice/practice_folder# nano urama.sh
+(base) root@H225-LT3520-01:/home/practice/practice_folder# bash practice.sh
+bash: practice.sh: No such file or directory
+(base) root@H225-LT3520-01:/home/practice/practice_folder# cd
+(base) root@H225-LT3520-01:~# cd /home
+(base) root@H225-LT3520-01:/home# cd practice
+(base) root@H225-LT3520-01:/home/practice# bash practice.sh
+bash: practice.sh: No such file or directory
+(base) root@H225-LT3520-01:/home/practice# cd /home
+(base) root@H225-LT3520-01:/home# bash practice.sh
+(base) root@H225-LT3520-01:/home# ls
+DrosPepper  practice  practice.sh  vivian_practice
+(base) root@H225-LT3520-01:/home#
