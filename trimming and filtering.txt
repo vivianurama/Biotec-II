@@ -1,0 +1,130 @@
+Welcome to Ubuntu 24.04.1 LTS (GNU/Linux 5.15.167.4-microsoft-standard-WSL2 x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/pro
+
+ System information as of Tue Mar  4 17:40:03 EST 2025
+
+  System load:  0.56                Processes:             63
+  Usage of /:   7.6% of 1006.85GB   Users logged in:       0
+  Memory usage: 5%                  IPv4 address for eth0: 172.20.46.86
+  Swap usage:   0%
+
+ * Strictly confined Kubernetes makes edge and IoT secure. Learn how MicroK8s
+   just raised the bar for easy, resilient and secure K8s cluster deployment.
+
+   https://ubuntu.com/engage/secure-kubernetes-at-the-edge
+
+This message is shown once a day. To disable it please create the
+/root/.hushlogin file.
+(base) root@H225-LT3520-01:~# sudo apt install bcftools
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+bcftools is already the newest version (1.19-1build2).
+bcftools set to manually installed.
+0 upgraded, 0 newly installed, 0 to remove and 117 not upgraded.
+(base) root@H225-LT3520-01:~# cd /home
+(base) root@H225-LT3520-01:/home# cd vivian_practice
+(base) root@H225-LT3520-01:/home/vivian_practice# ls
+NGS_practice  NGS_practice.zip  NGS_practice.zip:Zone.Identifier  output_folder  vivian.txt
+(base) root@H225-LT3520-01:/home/vivian_practice# cd NGS_practice
+(base) root@H225-LT3520-01:/home/vivian_practice/NGS_practice# ls
+example_snp.vcf                  reference.fa.pac              sampleA.sorted.bam.bai            sampleA_R2.fq.gz:Zone.Identifier
+example_snp.vcf:Zone.Identifier  reference.fa.sa               sampleA_R1.fq.gz                  sampleA_R2.out.fq.gz
+igv_snapshot.png                 reference.fa:Zone.Identifier  sampleA_R1.fq.gz:Zone.Identifier  sampleB_R1.fq.gz
+output_folder                    sam_folder                    sampleA_R1.out.fq.gz              sampleB_R1.fq.gz:Zone.Identifier
+reference.fa                     sampleA.bam                   sampleA_R1.out_fastqc.html        sampleB_R2.fq.gz
+reference.fa.amb                 sampleA.sam                   sampleA_R1.out_fastqc.zip         sampleB_R2.fq.gz:Zone.Identifier
+reference.fa.ann                 sampleA.sam.save              sampleA_R1_fastqc.html
+reference.fa.bwt                 sampleA.sam.save.1            sampleA_R1_fastqc.zip
+reference.fa.fai                 sampleA.sorted.bam            sampleA_R2.fq.gz
+(base) root@H225-LT3520-01:/home/vivian_practice/NGS_practice# bcftools mpileup -Ou -f reference.fa sampleA.sorted.bam > sampleA.mpileup
+[mpileup] 1 samples in 1 input files
+[mpileup] maximum number of reads per input file set to -d 250
+(base) root@H225-LT3520-01:/home/vivian_practice/NGS_practice# bcftools call -mv Ob -o variantsA.bcf sampleA.mpileup
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[E::hts_open_format] Failed to open file "Ob" : No such file or directory
+Failed to read from Ob: No such file or directory
+(base) root@H225-LT3520-01:/home/vivian_practice/NGS_practice# ls
+example_snp.vcf                  reference.fa.pac              sampleA.sorted.bam                sampleA_R2.fq.gz
+example_snp.vcf:Zone.Identifier  reference.fa.sa               sampleA.sorted.bam.bai            sampleA_R2.fq.gz:Zone.Identifier
+igv_snapshot.png                 reference.fa:Zone.Identifier  sampleA_R1.fq.gz                  sampleA_R2.out.fq.gz
+output_folder                    sam_folder                    sampleA_R1.fq.gz:Zone.Identifier  sampleB_R1.fq.gz
+reference.fa                     sampleA.bam                   sampleA_R1.out.fq.gz              sampleB_R1.fq.gz:Zone.Identifier
+reference.fa.amb                 sampleA.mpileup               sampleA_R1.out_fastqc.html        sampleB_R2.fq.gz
+reference.fa.ann                 sampleA.sam                   sampleA_R1.out_fastqc.zip         sampleB_R2.fq.gz:Zone.Identifier
+reference.fa.bwt                 sampleA.sam.save              sampleA_R1_fastqc.html
+reference.fa.fai                 sampleA.sam.save.1            sampleA_R1_fastqc.zip
+(base) root@H225-LT3520-01:/home/vivian_practice/NGS_practice# bcftools call -mv Ob -o variantsA.bcf sampleA.mpileup
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[E::hts_open_format] Failed to open file "Ob" : No such file or directory
+Failed to read from Ob: No such file or directory
+(base) root@H225-LT3520-01:/home/vivian_practice/NGS_practice# bcftools call -mv -Ob -o variantsA.bcf sampleA.mpileup
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+(base) root@H225-LT3520-01:/home/vivian_practice/NGS_practice# ls
+example_snp.vcf                  reference.fa.pac              sampleA.sorted.bam                sampleA_R2.fq.gz
+example_snp.vcf:Zone.Identifier  reference.fa.sa               sampleA.sorted.bam.bai            sampleA_R2.fq.gz:Zone.Identifier
+igv_snapshot.png                 reference.fa:Zone.Identifier  sampleA_R1.fq.gz                  sampleA_R2.out.fq.gz
+output_folder                    sam_folder                    sampleA_R1.fq.gz:Zone.Identifier  sampleB_R1.fq.gz
+reference.fa                     sampleA.bam                   sampleA_R1.out.fq.gz              sampleB_R1.fq.gz:Zone.Identifier
+reference.fa.amb                 sampleA.mpileup               sampleA_R1.out_fastqc.html        sampleB_R2.fq.gz
+reference.fa.ann                 sampleA.sam                   sampleA_R1.out_fastqc.zip         sampleB_R2.fq.gz:Zone.Identifier
+reference.fa.bwt                 sampleA.sam.save              sampleA_R1_fastqc.html            variantsA.bcf
+reference.fa.fai                 sampleA.sam.save.1            sampleA_R1_fastqc.zip
+(base) root@H225-LT3520-01:/home/vivian_practice/NGS_practice# bcftools view variantsA.bcf > variantsA.vcf
+(base) root@H225-LT3520-01:/home/vivian_practice/NGS_practice# less variantsA.vcf
+(base) root@H225-LT3520-01:/home/vivian_practice/NGS_practice# bcftools stats variantsA.vcf > summary.txt
+(base) root@H225-LT3520-01:/home/vivian_practice/NGS_practice# bcftools filter -e 'QUAL<20' -o filtered_by_qual.vcf variantsA.vcf
+(base) root@H225-LT3520-01:/home/vivian_practice/NGS_practice# bcftools filter -e 'DP<10' -o filtered_by_depth.vcf variantsA.vcf
+(base) root@H225-LT3520-01:/home/vivian_practice/NGS_practice# bcftools filter -e 'QUAL<20||DP<10' -O filtered_variants.vcf variantsA.vcf
+The output type "filtered_variants.vcf" not recognised
+(base) root@H225-LT3520-01:/home/vivian_practice/NGS_practice# bcftools filter -e 'QUAL<20||DP<10' -O filtered_variants.vcf variantsA.vcf
+The output type "filtered_variants.vcf" not recognised
+(base) root@H225-LT3520-01:/home/vivian_practice/NGS_practice# bcftools filter -e 'QUAL<20 || DP<10' -o filtered_variants.vcf variantsA.vcf
+(base) root@H225-LT3520-01:/home/vivian_practice/NGS_practice# ls
+example_snp.vcf                  reference.fa.bwt              sampleA.sam.save.1                sampleA_R2.fq.gz
+example_snp.vcf:Zone.Identifier  reference.fa.fai              sampleA.sorted.bam                sampleA_R2.fq.gz:Zone.Identifier
+filtered_by_depth.vcf            reference.fa.pac              sampleA.sorted.bam.bai            sampleA_R2.out.fq.gz
+filtered_by_qual.vcf             reference.fa.sa               sampleA_R1.fq.gz                  sampleB_R1.fq.gz
+filtered_variants.vcf            reference.fa:Zone.Identifier  sampleA_R1.fq.gz:Zone.Identifier  sampleB_R1.fq.gz:Zone.Identifier
+igv_snapshot.png                 sam_folder                    sampleA_R1.out.fq.gz              sampleB_R2.fq.gz
+output_folder                    sampleA.bam                   sampleA_R1.out_fastqc.html        sampleB_R2.fq.gz:Zone.Identifier
+reference.fa                     sampleA.mpileup               sampleA_R1.out_fastqc.zip         summary.txt
+reference.fa.amb                 sampleA.sam                   sampleA_R1_fastqc.html            variantsA.bcf
+reference.fa.ann                 sampleA.sam.save              sampleA_R1_fastqc.zip             variantsA.vcf
+(base) root@H225-LT3520-01:/home/vivian_practice/NGS_practice# bcftools stats filtered_by_depth.vcf > filtered_by_depth_summary.txt
+(base) root@H225-LT3520-01:/home/vivian_practice/NGS_practice# bcftools stats filtered_by_qual.vcf > filtered_by_qual_summary.txt
+(base) root@H225-LT3520-01:/home/vivian_practice/NGS_practice# bcftools stats filtered_variants.vcf > filtered_bvariants_summary.txt
+(base) root@H225-LT3520-01:/home/vivian_practice/NGS_practice# ls
+example_snp.vcf                  reference.fa.amb              sampleA.sam.save                  sampleA_R2.fq.gz
+example_snp.vcf:Zone.Identifier  reference.fa.ann              sampleA.sam.save.1                sampleA_R2.fq.gz:Zone.Identifier
+filtered_bvariants_summary.txt   reference.fa.bwt              sampleA.sorted.bam                sampleA_R2.out.fq.gz
+filtered_by_depth.vcf            reference.fa.fai              sampleA.sorted.bam.bai            sampleB_R1.fq.gz
+filtered_by_depth_summary.txt    reference.fa.pac              sampleA_R1.fq.gz                  sampleB_R1.fq.gz:Zone.Identifier
+filtered_by_qual.vcf             reference.fa.sa               sampleA_R1.fq.gz:Zone.Identifier  sampleB_R2.fq.gz
+filtered_by_qual_summary.txt     reference.fa:Zone.Identifier  sampleA_R1.out.fq.gz              sampleB_R2.fq.gz:Zone.Identifier
+filtered_variants.vcf            sam_folder                    sampleA_R1.out_fastqc.html        summary.txt
+igv_snapshot.png                 sampleA.bam                   sampleA_R1.out_fastqc.zip         variantsA.bcf
+output_folder                    sampleA.mpileup               sampleA_R1_fastqc.html            variantsA.vcf
+reference.fa                     sampleA.sam                   sampleA_R1_fastqc.zip
+(base) root@H225-LT3520-01:/home/vivian_practice/NGS_practice# less filtered_by_depth_summary.text
+filtered_by_depth_summary.text: No such file or directory
+(base) root@H225-LT3520-01:/home/vivian_practice/NGS_practice# less filtered_by_depth_summary.txt
+(base) root@H225-LT3520-01:/home/vivian_practice/NGS_practice# less filtered_by_qual_summary.txt
+(base) root@H225-LT3520-01:/home/vivian_practice/NGS_practice# less filtered_by_depth_summary.txt
+(base) root@H225-LT3520-01:/home/vivian_practice/NGS_practice# less filtered_by_depth_summary.txt
+(base) root@H225-LT3520-01:/home/vivian_practice/NGS_practice# ls
+example_snp.vcf                  reference.fa.amb              sampleA.sam.save                  sampleA_R2.fq.gz
+example_snp.vcf:Zone.Identifier  reference.fa.ann              sampleA.sam.save.1                sampleA_R2.fq.gz:Zone.Identifier
+filtered_bvariants_summary.txt   reference.fa.bwt              sampleA.sorted.bam                sampleA_R2.out.fq.gz
+filtered_by_depth.vcf            reference.fa.fai              sampleA.sorted.bam.bai            sampleB_R1.fq.gz
+filtered_by_depth_summary.txt    reference.fa.pac              sampleA_R1.fq.gz                  sampleB_R1.fq.gz:Zone.Identifier
+filtered_by_qual.vcf             reference.fa.sa               sampleA_R1.fq.gz:Zone.Identifier  sampleB_R2.fq.gz
+filtered_by_qual_summary.txt     reference.fa:Zone.Identifier  sampleA_R1.out.fq.gz              sampleB_R2.fq.gz:Zone.Identifier
+filtered_variants.vcf            sam_folder                    sampleA_R1.out_fastqc.html        summary.txt
+igv_snapshot.png                 sampleA.bam                   sampleA_R1.out_fastqc.zip         variantsA.bcf
+output_folder                    sampleA.mpileup               sampleA_R1_fastqc.html            variantsA.vcf
+reference.fa                     sampleA.sam                   sampleA_R1_fastqc.zip
+(base) root@H225-LT3520-01:/home/vivian_practice/NGS_practice#
