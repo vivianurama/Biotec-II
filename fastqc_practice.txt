@@ -1,0 +1,504 @@
+(base) root@H225-LT3520-01:~# pwd
+/root
+(base) root@H225-LT3520-01:~# cd practice
+-bash: cd: practice: No such file or directory
+(base) root@H225-LT3520-01:~# cd
+(base) root@H225-LT3520-01:~# cd practice
+-bash: cd: practice: No such file or directory
+(base) root@H225-LT3520-01:~# ls
+ 1998                                           'SRX16346774[accn]'   drospepper          test.bash
+ Drosophila_Pepper                              'SRX24423349[accn]'   fastq_download.py   vivian
+ Log.out                                         assignment           ht-seqrunDros.sh    vivian.txt
+ Oryza_sativa.IRGSP-1.0.dna.chromosome.1.fa.gz   biotechnique         index.html          vivianurama
+ PRJNA860149                                     chikwado.txt         maria              '~p'
+ RNAstar.sh                                      clean                miniconda
+ SRR20313491                                     cucuminassignment    miniconda3
+ SRR20313492                                     cummin               practice_folder
+(base) root@H225-LT3520-01:~# cd
+(base) root@H225-LT3520-01:~# cd practice_folder
+(base) root@H225-LT3520-01:~/practice_folder# pwd
+/root/practice_folder
+(base) root@H225-LT3520-01:~/practice_folder# cd home
+-bash: cd: home: No such file or directory
+(base) root@H225-LT3520-01:~/practice_folder# cd vivian_practice
+-bash: cd: vivian_practice: No such file or directory
+(base) root@H225-LT3520-01:~/practice_folder# cd
+(base) root@H225-LT3520-01:~# cd home
+-bash: cd: home: No such file or directory
+(base) root@H225-LT3520-01:~# cd /home
+(base) root@H225-LT3520-01:/home# cd vivian_practice
+(base) root@H225-LT3520-01:/home/vivian_practice# sudo apt install fastqc
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+fastqc is already the newest version (0.12.1+dfsg-3).
+0 upgraded, 0 newly installed, 0 to remove and 116 not upgraded.
+(base) root@H225-LT3520-01:/home/vivian_practice# fastqc sampleA_R1.fq.gz
+Skipping 'sampleA_R1.fq.gz' which didn't exist, or couldn't be read
+(base) root@H225-LT3520-01:/home/vivian_practice# ls
+NGS_practice.zip  NGS_practice.zip:Zone.Identifier  vivian.txt
+(base) root@H225-LT3520-01:/home/vivian_practice# fastqc sampleA_R1.fq.gz
+Skipping 'sampleA_R1.fq.gz' which didn't exist, or couldn't be read
+(base) root@H225-LT3520-01:/home/vivian_practice# gun zip fastqc sampleA_R1.fq.gz
+Command 'gun' not found, did you mean:
+  command 'gum' from snap gum (0.13.0)
+  command 'bun' from snap bun-js (1.2.3)
+  command 'grun' from deb grun (0.9.3+git20200303-3)
+  command 'zun' from deb python3-zunclient (4.7.0-0ubuntu1)
+  command 'gen' from deb multimon (1.0-7.1build2)
+  command 'grn' from deb groff (1.23.0-3)
+  command 'gn' from deb generate-ninja (0.0~git20231213.85944eb-1)
+See 'snap info <snapname>' for additional versions.
+(base) root@H225-LT3520-01:/home/vivian_practice# fastqc sampleA_R1.fq.gz
+Skipping 'sampleA_R1.fq.gz' which didn't exist, or couldn't be read
+(base) root@H225-LT3520-01:/home/vivian_practice# fastqc sampleA_R1.fq.gz
+Skipping 'sampleA_R1.fq.gz' which didn't exist, or couldn't be read
+(base) root@H225-LT3520-01:/home/vivian_practice# fastqc sampleA_R1.fq.gz
+Skipping 'sampleA_R1.fq.gz' which didn't exist, or couldn't be read
+(base) root@H225-LT3520-01:/home/vivian_practice# fastqc sampleA_R1.fq
+Skipping 'sampleA_R1.fq' which didn't exist, or couldn't be read
+(base) root@H225-LT3520-01:/home/vivian_practice# fastqc sampleA_R1.fq.gz
+Skipping 'sampleA_R1.fq.gz' which didn't exist, or couldn't be read
+(base) root@H225-LT3520-01:/home/vivian_practice# ls
+NGS_practice  NGS_practice.zip  NGS_practice.zip:Zone.Identifier  vivian.txt
+(base) root@H225-LT3520-01:/home/vivian_practice# cd NGS_practice
+(base) root@H225-LT3520-01:/home/vivian_practice/NGS_practice# fastqc sampleA_R1.fq.gz
+application/gzip
+Started analysis of sampleA_R1.fq.gz
+Approx 5% complete for sampleA_R1.fq.gz
+Approx 10% complete for sampleA_R1.fq.gz
+Approx 15% complete for sampleA_R1.fq.gz
+Approx 20% complete for sampleA_R1.fq.gz
+Approx 25% complete for sampleA_R1.fq.gz
+Approx 30% complete for sampleA_R1.fq.gz
+Approx 35% complete for sampleA_R1.fq.gz
+Approx 40% complete for sampleA_R1.fq.gz
+Approx 45% complete for sampleA_R1.fq.gz
+Approx 50% complete for sampleA_R1.fq.gz
+Approx 55% complete for sampleA_R1.fq.gz
+Approx 60% complete for sampleA_R1.fq.gz
+Approx 65% complete for sampleA_R1.fq.gz
+Approx 70% complete for sampleA_R1.fq.gz
+Approx 75% complete for sampleA_R1.fq.gz
+Approx 80% complete for sampleA_R1.fq.gz
+Approx 85% complete for sampleA_R1.fq.gz
+Approx 90% complete for sampleA_R1.fq.gz
+Approx 95% complete for sampleA_R1.fq.gz
+Analysis complete for sampleA_R1.fq.gz
+(base) root@H225-LT3520-01:/home/vivian_practice/NGS_practice# sudo apt install cutadapt
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+The following additional packages will be installed:
+  pigz python3-cutadapt python3-dnaio python3-xopen
+The following NEW packages will be installed:
+  cutadapt pigz python3-cutadapt python3-dnaio python3-xopen
+0 upgraded, 5 newly installed, 0 to remove and 116 not upgraded.
+Need to get 361 kB of archives.
+After this operation, 1303 kB of additional disk space will be used.
+Do you want to continue? [Y/n] y
+Get:1 http://archive.ubuntu.com/ubuntu noble/universe amd64 pigz amd64 2.8-1 [65.6 kB]
+Get:2 http://archive.ubuntu.com/ubuntu noble/universe amd64 python3-xopen all 1.7.0-2 [17.0 kB]
+Get:3 http://archive.ubuntu.com/ubuntu noble/universe amd64 python3-dnaio amd64 1.2.0-2build1 [80.4 kB]
+Get:4 http://archive.ubuntu.com/ubuntu noble/universe amd64 python3-cutadapt amd64 4.4-1build2 [192 kB]
+Get:5 http://archive.ubuntu.com/ubuntu noble/universe amd64 cutadapt all 4.4-1build2 [6776 B]
+Fetched 361 kB in 0s (973 kB/s)
+Selecting previously unselected package pigz.
+(Reading database ... 44413 files and directories currently installed.)
+Preparing to unpack .../archives/pigz_2.8-1_amd64.deb ...
+Unpacking pigz (2.8-1) ...
+Selecting previously unselected package python3-xopen.
+Preparing to unpack .../python3-xopen_1.7.0-2_all.deb ...
+Unpacking python3-xopen (1.7.0-2) ...
+Selecting previously unselected package python3-dnaio.
+Preparing to unpack .../python3-dnaio_1.2.0-2build1_amd64.deb ...
+Unpacking python3-dnaio (1.2.0-2build1) ...
+Selecting previously unselected package python3-cutadapt.
+Preparing to unpack .../python3-cutadapt_4.4-1build2_amd64.deb ...
+Unpacking python3-cutadapt (4.4-1build2) ...
+Selecting previously unselected package cutadapt.
+Preparing to unpack .../cutadapt_4.4-1build2_all.deb ...
+Unpacking cutadapt (4.4-1build2) ...
+Setting up pigz (2.8-1) ...
+Setting up python3-xopen (1.7.0-2) ...
+Setting up python3-dnaio (1.2.0-2build1) ...
+Setting up python3-cutadapt (4.4-1build2) ...
+Setting up cutadapt (4.4-1build2) ...
+Processing triggers for man-db (2.12.0-4build2) ...
+(base) root@H225-LT3520-01:/home/vivian_practice/NGS_practice# cutadapt -a AGATCGGAAG -A AGATCGGAG -m 100 -o sampleA_R1.out.fq.gz -p sampleA_R2.out.fq.gz sampleA_R1.fq.gz sampleA_R2.fq.gz
+This is cutadapt 4.4 with Python 3.12.3
+Command line parameters: -a AGATCGGAAG -A AGATCGGAG -m 100 -o sampleA_R1.out.fq.gz -p sampleA_R2.out.fq.gz sampleA_R1.fq.gz sampleA_R2.fq.gz
+Processing paired-end reads on 1 core ...
+Done           00:00:18     1,445,709 reads @  12.5 µs/read;   4.80 M reads/minute
+Finished in 18.060 s (12.492 µs/read; 4.80 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:          1,445,709
+  Read 1 with adapter:               1,173,499 (81.2%)
+  Read 2 with adapter:                  66,000 (4.6%)
+
+== Read fate breakdown ==
+Pairs that were too short:             915,605 (63.3%)
+Pairs written (passing filters):       530,104 (36.7%)
+
+Total basepairs processed:   422,147,028 bp
+  Read 1:   211,073,514 bp
+  Read 2:   211,073,514 bp
+Total written (filtered):    147,670,099 bp (35.0%)
+  Read 1:    70,455,143 bp
+  Read 2:    77,214,956 bp
+
+=== First read: Adapter 1 ===
+
+Sequence: AGATCGGAAG; Type: regular 3'; Length: 10; Trimmed: 1173499 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-9 bp: 0; 10 bp: 1
+
+Bases preceding removed adapters:
+  A: 0.4%
+  C: 0.4%
+  G: 98.9%
+  T: 0.3%
+  none/other: 0.0%
+WARNING:
+    The adapter is preceded by 'G' extremely often.
+    The provided adapter sequence could be incomplete at its 5' end.
+    Ignore this warning when trimming primers.
+
+Overview of removed sequences
+length  count   expect  max.err error counts
+3       8603    22589.2 0       8603
+4       4131    5647.3  0       4131
+5       3654    1411.8  0       3654
+6       3481    353.0   0       3481
+7       3165    88.2    0       3165
+8       4291    22.1    0       4291
+9       4799    5.5     0       4784 15
+10      3684    1.4     1       3332 352
+11      3791    1.4     1       3529 262
+12      4213    1.4     1       3906 307
+13      3892    1.4     1       3657 235
+14      4902    1.4     1       4576 326
+15      4907    1.4     1       4569 338
+16      4051    1.4     1       3791 260
+17      5981    1.4     1       5619 362
+18      6743    1.4     1       6314 429
+19      5393    1.4     1       5056 337
+20      6095    1.4     1       5668 427
+21      5015    1.4     1       4693 322
+22      4799    1.4     1       4480 319
+23      5062    1.4     1       4722 340
+24      4887    1.4     1       4569 318
+25      5021    1.4     1       4687 334
+26      6098    1.4     1       5700 398
+27      6598    1.4     1       6138 460
+28      5526    1.4     1       5157 369
+29      6080    1.4     1       5684 396
+30      6178    1.4     1       5753 425
+31      5464    1.4     1       5104 360
+32      8882    1.4     1       8296 586
+33      9210    1.4     1       8633 577
+34      7294    1.4     1       6740 554
+35      7519    1.4     1       6992 527
+36      7204    1.4     1       6706 498
+37      6635    1.4     1       6187 448
+38      6854    1.4     1       6373 481
+39      7078    1.4     1       6603 475
+40      6271    1.4     1       5822 449
+41      7185    1.4     1       6715 470
+42      7237    1.4     1       6781 456
+43      7220    1.4     1       6737 483
+44      8441    1.4     1       7882 559
+45      7773    1.4     1       7287 486
+46      6799    1.4     1       6356 443
+47      8187    1.4     1       7671 516
+48      8165    1.4     1       7639 526
+49      8372    1.4     1       7865 507
+50      10178   1.4     1       9519 659
+51      11245   1.4     1       10590 655
+52      8970    1.4     1       8448 522
+53      10261   1.4     1       9646 615
+54      10231   1.4     1       9633 598
+55      8899    1.4     1       8336 563
+56      9928    1.4     1       9285 643
+57      10507   1.4     1       9844 663
+58      9826    1.4     1       9244 582
+59      11647   1.4     1       10975 672
+60      11044   1.4     1       10384 660
+61      9670    1.4     1       9106 564
+62      11585   1.4     1       10948 637
+63      15210   1.4     1       14394 816
+64      15626   1.4     1       14792 834
+65      19557   1.4     1       18542 1015
+66      20853   1.4     1       19768 1085
+67      13652   1.4     1       12898 754
+68      13067   1.4     1       12337 730
+69      14825   1.4     1       13977 848
+70      11780   1.4     1       11043 737
+71      12825   1.4     1       12069 756
+72      14736   1.4     1       13967 769
+73      13249   1.4     1       12567 682
+74      13851   1.4     1       13093 758
+75      15363   1.4     1       14561 802
+76      16027   1.4     1       15195 832
+77      16561   1.4     1       15699 862
+78      14808   1.4     1       14057 751
+79      12652   1.4     1       11972 680
+80      14376   1.4     1       13628 748
+81      15471   1.4     1       14714 757
+82      15717   1.4     1       14907 810
+83      18499   1.4     1       17543 956
+84      17329   1.4     1       16501 828
+85      14821   1.4     1       14059 762
+86      18541   1.4     1       17618 923
+87      19361   1.4     1       18480 881
+88      15941   1.4     1       15113 828
+89      20809   1.4     1       19709 1100
+90      19767   1.4     1       18861 906
+91      14440   1.4     1       13758 682
+92      20543   1.4     1       19509 1034
+93      29301   1.4     1       27911 1390
+94      21587   1.4     1       20530 1057
+95      16204   1.4     1       15448 756
+96      23421   1.4     1       22313 1108
+97      20882   1.4     1       19896 986
+98      14702   1.4     1       14001 701
+99      14732   1.4     1       14035 697
+100     12799   1.4     1       12142 657
+101     15466   1.4     1       14717 749
+102     14847   1.4     1       14171 676
+103     10898   1.4     1       10365 533
+104     12082   1.4     1       11487 595
+105     12829   1.4     1       12188 641
+106     8805    1.4     1       8336 469
+107     9584    1.4     1       9079 505
+108     8454    1.4     1       7997 457
+109     5402    1.4     1       5114 288
+110     5355    1.4     1       5061 294
+111     4815    1.4     1       4519 296
+112     3063    1.4     1       2898 165
+113     3318    1.4     1       3127 191
+114     1635    1.4     1       1530 105
+115     788     1.4     1       704 84
+116     425     1.4     1       365 60
+117     287     1.4     1       222 65
+118     129     1.4     1       44 85
+119     120     1.4     1       38 82
+120     135     1.4     1       68 67
+121     349     1.4     1       280 69
+122     62      1.4     1       10 52
+123     49      1.4     1       2 47
+124     97      1.4     1       5 92
+125     81      1.4     1       3 78
+126     77      1.4     1       4 73
+127     66      1.4     1       2 64
+128     59      1.4     1       1 58
+129     52      1.4     1       2 50
+130     63      1.4     1       1 62
+131     47      1.4     1       1 46
+132     18      1.4     1       0 18
+133     39      1.4     1       1 38
+134     61      1.4     1       0 61
+135     32      1.4     1       2 30
+136     36      1.4     1       0 36
+137     56      1.4     1       1 55
+138     59      1.4     1       0 59
+139     44      1.4     1       0 44
+140     29      1.4     1       0 29
+141     45      1.4     1       2 43
+142     43      1.4     1       0 43
+143     1103    1.4     1       1002 101
+144     1736    1.4     1       1629 107
+145     24      1.4     1       3 21
+146     29      1.4     1       10 19
+
+
+=== Second read: Adapter 2 ===
+
+Sequence: AGATCGGAG; Type: regular 3'; Length: 9; Trimmed: 66000 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-9 bp: 0
+
+Bases preceding removed adapters:
+  A: 57.1%
+  C: 2.9%
+  G: 3.8%
+  T: 36.2%
+  none/other: 0.0%
+
+Overview of removed sequences
+length  count   expect  max.err error counts
+3       29849   22589.2 0       29849
+4       11759   5647.3  0       11759
+5       11360   1411.8  0       11360
+6       3503    353.0   0       3503
+7       3230    88.2    0       3230
+8       4345    22.1    0       4345
+9       9       5.5     0       9
+10      12      5.5     0       12
+11      16      5.5     0       16
+12      14      5.5     0       14
+13      17      5.5     0       17
+14      15      5.5     0       15
+15      16      5.5     0       16
+16      13      5.5     0       13
+17      15      5.5     0       15
+18      18      5.5     0       18
+19      21      5.5     0       21
+20      14      5.5     0       14
+21      18      5.5     0       18
+22      14      5.5     0       14
+23      9       5.5     0       9
+24      10      5.5     0       10
+25      12      5.5     0       12
+26      21      5.5     0       21
+27      20      5.5     0       20
+28      18      5.5     0       18
+29      15      5.5     0       15
+30      16      5.5     0       16
+31      20      5.5     0       20
+32      24      5.5     0       24
+33      24      5.5     0       24
+34      20      5.5     0       20
+35      14      5.5     0       14
+36      13      5.5     0       13
+37      19      5.5     0       19
+38      18      5.5     0       18
+39      10      5.5     0       10
+40      14      5.5     0       14
+41      19      5.5     0       19
+42      6       5.5     0       6
+43      18      5.5     0       18
+44      21      5.5     0       21
+45      18      5.5     0       18
+46      15      5.5     0       15
+47      15      5.5     0       15
+48      12      5.5     0       12
+49      7       5.5     0       7
+50      15      5.5     0       15
+51      18      5.5     0       18
+52      20      5.5     0       20
+53      17      5.5     0       17
+54      13      5.5     0       13
+55      8       5.5     0       8
+56      21      5.5     0       21
+57      29      5.5     0       29
+58      18      5.5     0       18
+59      16      5.5     0       16
+60      18      5.5     0       18
+61      11      5.5     0       11
+62      16      5.5     0       16
+63      20      5.5     0       20
+64      23      5.5     0       23
+65      22      5.5     0       22
+66      34      5.5     0       34
+67      12      5.5     0       12
+68      18      5.5     0       18
+69      25      5.5     0       25
+70      9       5.5     0       9
+71      35      5.5     0       35
+72      14      5.5     0       14
+73      13      5.5     0       13
+74      11      5.5     0       11
+75      18      5.5     0       18
+76      26      5.5     0       26
+77      24      5.5     0       24
+78      23      5.5     0       23
+79      15      5.5     0       15
+80      19      5.5     0       19
+81      17      5.5     0       17
+82      25      5.5     0       25
+83      22      5.5     0       22
+84      17      5.5     0       17
+85      12      5.5     0       12
+86      15      5.5     0       15
+87      33      5.5     0       33
+88      20      5.5     0       20
+89      32      5.5     0       32
+90      30      5.5     0       30
+91      10      5.5     0       10
+92      26      5.5     0       26
+93      31      5.5     0       31
+94      27      5.5     0       27
+95      21      5.5     0       21
+96      21      5.5     0       21
+97      25      5.5     0       25
+98      21      5.5     0       21
+99      24      5.5     0       24
+100     11      5.5     0       11
+101     17      5.5     0       17
+102     27      5.5     0       27
+103     18      5.5     0       18
+104     14      5.5     0       14
+105     10      5.5     0       10
+106     9       5.5     0       9
+107     12      5.5     0       12
+108     20      5.5     0       20
+109     6       5.5     0       6
+110     7       5.5     0       7
+111     5       5.5     0       5
+112     6       5.5     0       6
+113     5       5.5     0       5
+114     8       5.5     0       8
+115     3       5.5     0       3
+116     6       5.5     0       6
+117     6       5.5     0       6
+118     3       5.5     0       3
+119     1       5.5     0       1
+120     2       5.5     0       2
+121     9       5.5     0       9
+122     3       5.5     0       3
+123     7       5.5     0       7
+124     5       5.5     0       5
+126     2       5.5     0       2
+127     3       5.5     0       3
+128     9       5.5     0       9
+129     14      5.5     0       14
+130     2       5.5     0       2
+131     5       5.5     0       5
+132     9       5.5     0       9
+135     2       5.5     0       2
+136     7       5.5     0       7
+137     1       5.5     0       1
+138     9       5.5     0       9
+139     5       5.5     0       5
+141     3       5.5     0       3
+142     7       5.5     0       7
+143     1       5.5     0       1
+144     2       5.5     0       2
+145     2       5.5     0       2
+146     1       5.5     0       1
+
+
+WARNING:
+    One or more of your adapter sequences may be incomplete.
+    Please see the detailed output above.
+(base) root@H225-LT3520-01:/home/vivian_practice/NGS_practice# fastqc sampleA_R1.out.fq.gz
+application/gzip
+Started analysis of sampleA_R1.out.fq.gz
+Approx 5% complete for sampleA_R1.out.fq.gz
+Approx 10% complete for sampleA_R1.out.fq.gz
+Approx 15% complete for sampleA_R1.out.fq.gz
+Approx 20% complete for sampleA_R1.out.fq.gz
+Approx 25% complete for sampleA_R1.out.fq.gz
+Approx 30% complete for sampleA_R1.out.fq.gz
+Approx 35% complete for sampleA_R1.out.fq.gz
+Approx 40% complete for sampleA_R1.out.fq.gz
+Approx 45% complete for sampleA_R1.out.fq.gz
+Approx 50% complete for sampleA_R1.out.fq.gz
+Approx 55% complete for sampleA_R1.out.fq.gz
+Approx 60% complete for sampleA_R1.out.fq.gz
+Approx 65% complete for sampleA_R1.out.fq.gz
+Approx 70% complete for sampleA_R1.out.fq.gz
+Approx 75% complete for sampleA_R1.out.fq.gz
+Approx 80% complete for sampleA_R1.out.fq.gz
+Approx 85% complete for sampleA_R1.out.fq.gz
+Approx 90% complete for sampleA_R1.out.fq.gz
+Approx 95% complete for sampleA_R1.out.fq.gz
+Analysis complete for sampleA_R1.out.fq.gz
+(base) root@H225-LT3520-01:/home/vivian_practice/NGS_practice#
